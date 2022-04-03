@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/ejemplo_tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042"
+        android:text="Actividad Recyclerview - Menú"
+        android:gravity="center"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/ejemplo_btn_personas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejemplo_tv_titulo"
+        app:layout_constraintVertical_bias="0.025"
+        android:text="Personas"
+        />
+
+    <Button
+        android:id="@+id/ejemplo_btn_vehiculos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehículos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejemplo_btn_personas"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/ejemplo_btn_productos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Productos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejemplo_btn_vehiculos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/ejemplo_btn_salir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejemplo_btn_productos"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

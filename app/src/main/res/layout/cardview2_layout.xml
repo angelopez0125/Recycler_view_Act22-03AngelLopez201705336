@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/design_default_color_primary"
+    android:layout_margin="18dp"
+    app:cardCornerRadius="15dp"
+
+    >
+    <RelativeLayout
+        android:id="@+id/relative2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+
+        >
+        <ImageView
+            android:id="@+id/iv_item"
+            android:layout_width="188dp"
+            android:layout_height="188dp"/>
+        <TextView
+            android:id="@+id/tv_placa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_item"
+            android:layout_toRightOf="@+id/iv_item"
+            android:textColor="@color/white"
+            android:text="Placa"
+            android:layout_alignParentTop="true"
+            />
+        <TextView
+            android:id="@+id/tv_nombrepropietario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_item"
+            android:layout_toRightOf="@+id/iv_item"
+            android:textColor="@color/white"
+            android:text="Nombre del Propietario"
+            android:layout_below="@+id/tv_placa"
+            />
+        <TextView
+            android:id="@+id/tv_marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_item"
+            android:layout_toRightOf="@+id/iv_item"
+            android:textColor="@color/white"
+            android:text="Marca"
+            android:layout_below="@+id/tv_nombrepropietario"
+            />
+        <TextView
+            android:id="@+id/tv_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_item"
+            android:layout_toRightOf="@+id/iv_item"
+            android:textColor="@color/white"
+            android:text="Color"
+            android:layout_below="@+id/tv_marca"
+            />
+        <TextView
+            android:id="@+id/tv_modelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_item"
+            android:layout_toRightOf="@+id/iv_item"
+            android:textColor="@color/white"
+            android:text="Modelo"
+            android:layout_below="@+id/tv_color"
+            />
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
